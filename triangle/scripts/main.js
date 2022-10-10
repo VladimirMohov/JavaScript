@@ -19,9 +19,8 @@ function triangle(width, height) {
         break;
       case 2:
         if (x && (n == arrayOfPoint[0].x || n == arrayOfPoint[1].x)) { return n = checkXY(rnd(width),point,true) }
-        else { return n };
         if (!x && (n == arrayOfPoint[0].y || n == arrayOfPoint[1].y)) { return n = checkXY(rnd(height), point, false) }
-        else { return n };
+        return n;
         break;
       default:
         break;
